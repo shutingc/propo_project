@@ -14,7 +14,8 @@
     <title>Be happier homeowners with Propo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen">
       
     <!-- Custom styles for this template -->
     <link href="css/propo_main.css" rel="stylesheet">
@@ -70,35 +71,38 @@ Transparent Price through A Worry Free Process.</p>
                     <div role="tabpanel" class="tab-pane active" id="major">
                 <form role="form">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
+                        <div class="col-md-5 col-md-offset-3">
                             <div class="form-group">
                                 <input class="form-control" placeholder="Type Keywords of What you try to do">
                                     <datalist id="projects">
-                     			<option value="bathroom remodeling"/>
-                     			<option value="electrical services"/>
-                     		        <option value="furnace installation"/>
-                     			<option value="garage door repair"/>
-                     			<option value="HVAC services"/>
-                     			<option value="lawn treatment"/>
-                     			<option value="pest/wildlife control"/>
-                     			<option value="plumbing services"/>
-                     			<option value="residential construction"/>
-                     			<option value="roof replacement"/>
-                     			<option value="roofing services"/>
-                     			<option value="solar installation"/>
-                     			<option value="swimming pool construction"/>
-                     			<option value="window installation"/>
-                     			<option value="window treatment"/>
-                     			<option value="driveway pavement"/>
-                     			<option value="deck and fence"/>
-                     			<option value="basement water proof"/>
-                     			<option value="sewer & utility services"/>
-                     			<option value="kitchen renovation"/>
-                     			<option value="flooring"/>
-                     			<option value="painting"/>
-                     			<option value="landscape"/>
-                    		    </datalist>
-			    </div>
+                                        <option value="bathroom remodeling"/>
+                                        <option value="electrical services"/>
+                                        <option value="furnace installation"/>
+                                        <option value="garage door repair"/>
+                                        <option value="HVAC services"/>
+                                        <option value="lawn treatment"/>
+                                        <option value="pest/wildlife control"/>
+                                        <option value="plumbing services"/>
+                                        <option value="residential construction"/>
+                                        <option value="roof replacement"/>
+                                        <option value="roofing services"/>
+                                        <option value="solar installation"/>
+                                        <option value="swimming pool construction"/>
+                                        <option value="window installation"/>
+                                        <option value="window treatment"/>
+                                        <option value="driveway pavement"/>
+                                        <option value="deck and fence"/>
+                                        <option value="basement water proof"/>
+                                        <option value="sewer & utility services"/>
+                                        <option value="kitchen renovation"/>
+                                        <option value="flooring"/>
+                                        <option value="painting"/>
+                                        <option value="landscape"/>
+                                    </datalist>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-warning">OK</button>
                         </div>
                     </div>
                     <div class="row">
@@ -106,12 +110,12 @@ Transparent Price through A Worry Free Process.</p>
                             <input type="text" class="form-control" id="exampleInputName2" placeholder="Zip Code">
                         </div>
                         <div class="qustion col-md-1">?</div>
-                        <div class="form-group col-md-3 col-md-offset-1">
+                        <div class="form-group col-md-2 col-md-offset-1">
                             <input type="text" class="form-control" id="exampleInputName2" placeholder="Approx Budget">
                         </div>
                         <div class="qustion col-md-1">?</div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="radio">
                               <label>
                                 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -123,7 +127,17 @@ Transparent Price through A Worry Free Process.</p>
                                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                 I have a prefered end date
                               </label>
-                            </div>
+                            </div>               
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input2" value="" /><br/>
+                            </div>           
                         </div>
                     </div>
                   <button type="submit" class="btn btn-warning">Submit Basic Info: Pros Fit Your Schdule Will Contact Soon  </button>
@@ -155,7 +169,7 @@ Transparent Price through A Worry Free Process.</p>
         
 <!-- Generated markup by the plugin -->
         
-                  <div class="mastfoot">
+                  <div class="mastfoot">      
             <div class="inner">
               <p><a>Powered by Drama King and Drama Queen</a>.</p>
             </div>
@@ -169,6 +183,19 @@ Transparent Price through A Worry Free Process.</p>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- date picker: https://eonasdan.github.io/bootstrap-datetimepicker/Installing/  -->
+    <script src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $('.form_date').datetimepicker({
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
