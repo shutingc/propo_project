@@ -37,7 +37,7 @@ body {
   background-color: #252934;
 }
 body {
-  color: #fff;
+  color: indianred;
   text-align: center;
 /*  text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
@@ -47,6 +47,11 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 /* Padding for spacing */
@@ -115,7 +120,6 @@ body {
 .qustion {
     color: white;
     font-size: 18px;
-    padding-left: 8px;
     margin-top: 5px;
     -moz-border-radius: 700px; 
     -webkit-border-radius: 700px; 

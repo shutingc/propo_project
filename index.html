@@ -39,11 +39,11 @@
               <a class="navbar-brand" href="#" ><img alt="Brand" src="img/logo.svg" height="40px"></a>
               <h3 class="masthead-brand">PROPO</h3>
               <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="#">JOIN</a></li>
-                  <li><a href="#">LOGIN</a></li>
-                  <li><a href="#">How We Work?</a></li>
-                </ul>
+                    <ul class="nav masthead-nav">
+                        <li><a href="#"><div data-toggle="modal" data-target="#signUp">Sign Up</div></a></li>
+                        <li><a href="#"><div data-toggle="modal" data-target="#logIn">Login</div></a></li>
+                        <li><a href="#">How We Work?</a></li>
+                    </ul>
               </nav>
               </div>
           </div>
@@ -59,6 +59,75 @@ Transparent Price through A Worry Free Process.</p>
           </div>
 <div>
 
+
+
+<!-- Modal_Sign Up -->
+<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+         <button type="button" class="btn btn-primary">Sign Up with Facebook</button>
+         <button type="button" class="btn btn-danger">Sign Up with Google</button>
+      </div>
+      <div>or</div>
+      <div class="modal-body">
+         <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Email Address">
+         </div>
+         <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Passward">
+         </div>
+         <button type="button" class="btn btn-warning">Sign Up</button>
+        </div>
+      <div>Already a member? Sign in Here</div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+    
+<!-- Modal_Log In -->
+<div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log In</h4>
+      </div>
+      <div class="modal-body">
+         <button type="button" class="btn btn-primary">Log in with Facebook</button>
+         <button type="button" class="btn btn-danger">Log in with Google</button>
+      </div>
+      <div>or</div>
+      <div class="modal-body">
+         <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Email Address">
+         </div>
+         <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Passward">
+         </div>
+         <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+    
   <!-- Nav tabs -->
         <ul class="nav nav-tabs nav-justified" role="tablist">
           <li role="presentation" class="active"><a href="#major" aria-controls="major" role="tab" data-toggle="tab">Major Home Improvement</a></li>
@@ -70,8 +139,8 @@ Transparent Price through A Worry Free Process.</p>
     <div role="tabpanel" class="tab-pane fade in active" id="major">
                     <div role="tabpanel" class="tab-pane active" id="major">
                 <form role="form">
-                    <div class="row">
-                        <div class="col-md-5 col-md-offset-3">
+                    <div class="row no-gutter">
+                        <div class="col-xs-5 col-xs-offset-3">
                             <div class="form-group">
                                 <input class="form-control" placeholder="Type Keywords of What you try to do">
                                     <datalist id="projects">
@@ -101,46 +170,65 @@ Transparent Price through A Worry Free Process.</p>
                                     </datalist>
                             </div>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-xs-1">
                             <button type="button" class="btn btn-warning">OK</button>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-2">
-                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Zip Code">
-                        </div>
-                        <div class="qustion col-md-1">?</div>
-                        <div class="form-group col-md-2 col-md-offset-1">
-                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Approx Budget">
-                        </div>
-                        <div class="qustion col-md-1">?</div>
-
-                        <div class="col-md-3">
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                I have a prefered start date
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                I have a prefered end date
-                              </label>
-                            </div>               
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <div class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                                    <input class="form-control" size="16" type="text" value="" readonly>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        <div class="col-md-2">
+                            <div class="row no-gutter">
+                                    <div class="form-group col-xs-11">
+                                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Zip Code">
+                                    </div>
+                                <div class="col-xs-1">
+                                    <div class="qustion">?</div>
                                 </div>
-                                <input type="hidden" id="dtp_input2" value="" /><br/>
-                            </div>           
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <div class="row no-gutter">
+                                <div class="col-xs-11">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Approx Budget">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <div class="qustion">?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        I have a prefered start date
+                                      </label>
+                                    </div>
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        I have a prefered end date
+                                      </label>
+                                    </div>  
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <input class="form-control" size="16" type="text" value="" readonly>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div>
+                                        <input type="hidden" id="dtp_input2" value="" /><br/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  <button type="submit" class="btn btn-warning">Submit Basic Info: Pros Fit Your Schdule Will Contact Soon  </button>
+                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#signUp">
+                        Submit Basic Info: Pros Fit Your Schdule Will Contact Soon
+                    </button>
                 </form>
             </div>
     </div>
@@ -173,9 +261,8 @@ Transparent Price through A Worry Free Process.</p>
             <div class="inner">
               <p><a>Powered by Drama King and Drama Queen</a>.</p>
             </div>
-          </div>
-        
-        
+          </div>          
+          
     </div> <!-- /container -->
 
 
@@ -198,5 +285,6 @@ Transparent Price through A Worry Free Process.</p>
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-modal.js"></script>
   </body>
 </html>
