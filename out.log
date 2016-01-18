@@ -8,6 +8,7 @@ CTRL + C to shutdown
 Static file server running at
   => http://localhost:8080/
 CTRL + C to shutdown
+<<<<<<< Updated upstream
 Static file server running at
   => http://localhost:8080/
 CTRL + C to shutdown
@@ -23,3 +24,5 @@ CTRL + C to shutdown
 Static file server running at
   => http://localhost:8080/
 CTRL + C to shutdown
+=======
+>>>>>>> Stashed changes
