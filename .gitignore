@@ -1,2 +1,5 @@
 error.log
 out.log
+node_modules
+grunt
+

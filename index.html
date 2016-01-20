@@ -14,7 +14,7 @@
     <title>Be happier homeowners with Propo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen">
       
     <!-- Custom styles for this template -->
@@ -33,21 +33,33 @@
   </head>
 
   <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img alt="Brand" src="img/logo.svg" height="30px"></a>
+              <h4 class="navbar-text">PROPO</h4>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Join as a Contractor</a></li>
+                <li><a href="#"><div data-toggle="modal" data-target="#signUp">Sign Up</div></a></li>
+                <li><a href="#"><div data-toggle="modal" data-target="#logIn">Login</div></a></li>
+                <li><a href="#">How We Work?</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      
       <div class="container">
-          <div class="masthead clearfix">
-              <div class="inner">
-              <a class="navbar-brand" href="#" ><img alt="Brand" src="img/logo.svg" height="40px"></a>
-              <h3 class="masthead-brand">PROPO</h3>
-              <nav>
-                    <ul class="nav masthead-nav">
-                        <li><a href="#">Join as a Contractor</a></li>
-                        <li><a href="#"><div data-toggle="modal" data-target="#signUp">Sign Up</div></a></li>
-                        <li><a href="#"><div data-toggle="modal" data-target="#logIn">Login</div></a></li>
-                        <li><a href="#">How We Work?</a></li>
-                    </ul>
-              </nav>
-              </div>
-          </div>
           <div class="inner cover">
             <p class="lead">Propo help to improve living condition to High Quality with Reasonable 
 Transparent Price through A Worry Free Process.</p>
@@ -59,9 +71,6 @@ Transparent Price through A Worry Free Process.</p>
             </p>
           </div>
 <div>
-
-
-
 <!-- Modal_Sign Up -->
 <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -296,8 +305,7 @@ Transparent Price through A Worry Free Process.</p>
         
         
 <!-- Generated markup by the plugin -->
-        
-                  <div class="mastfoot">      
+          <div class="mastfoot">      
             <div class="inner">
               <p><a>Powered by Drama King and Drama Queen</a>.</p>
             </div>
