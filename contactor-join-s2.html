@@ -18,7 +18,7 @@
     <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen">
       
     <!-- Custom styles for this template -->
-    <link href="css/contactor-join.css" rel="stylesheet">
+    <link href="css/contactor-join-s2.css" rel="stylesheet">
     
       
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -50,57 +50,39 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><div data-toggle="modal" data-target="#logIn">Shuting</div></a></li>
-                <li><a href="#">How We Work?</a></li>
+                    <li><a href="#">View Jobs</a></li>
+                    <li class="active"><a href="#">Contrator Profile<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lowell<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Edit Basic Profile</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">How We Work?</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
       
       <div class="container">
-          <div class="inner cover">
-            <p class="lead">Join Propo to get more business, save time and get paid in time</p>
+          <div class="row">
+            <div class="sidebar">
+              <ul class="nav nav-sidebar">
+                <li><h6>Required </h6></li>
+                <li class="active"><a href="#">Basics</a></li>
+                <li><a href="">Specialty</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li><h6>Optional</h6></li>
+                <li><a href="">Legal</a></li>
+                <li><a href="">Previous Work</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-offset-1 col-sm-6">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-3 control-label">Specialty</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputEmail3" placeholder="Discribe your specialty">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="text" class="col-sm-3 control-label">Licence </label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Enter the licence number if applicable">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="text" class="col-sm-3 control-label">Insurance </label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Enter insurance infomation if applicable">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="text" class="col-sm-3 control-label">Working Area</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Select areas on the map or type in the Zipcode">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="text" class="col-sm-3 control-label">Previous Work</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Enter info for previous work: Price, locations and photos">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-warning"><a href="#"><div data-toggle="modal" data-target="#signUp">Done</div></a></li></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        
         
 <!-- Generated markup by the plugin -->
         
@@ -112,71 +94,7 @@
           
       </div> <!-- /container -->
 
-<!-- Modal_Sign Up -->
-<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-      </div>
-      <div class="modal-body">
-         <button type="button" class="btn btn-primary">Sign Up with Facebook</button>
-         <button type="button" class="btn btn-danger">Sign Up with Google</button>
-      </div>
-      <div>or</div>
-      <div class="modal-body">
-         <div class="form-group">
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Email Address">
-         </div>
-         <div class="form-group">
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Passward">
-         </div>
-         <button type="button" class="btn btn-warning">Sign Up</button>
-        </div>
-      <div>Already a member? Sign in Here</div>
-      <div class="modal-footer">
-         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-    
-<!-- Modal_Log In -->
-<div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Log In</h4>
-      </div>
-      <div class="modal-body">
-         <button type="button" class="btn btn-primary">Log in with Facebook</button>
-         <button type="button" class="btn btn-danger">Log in with Google</button>
-      </div>
-      <div>or</div>
-      <div class="modal-body">
-         <div class="form-group">
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Email Address">
-         </div>
-         <div class="form-group">
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Passward">
-         </div>
-         <div class="checkbox">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Log In</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
+
 
     <!-- Bootstrap core JavaScript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

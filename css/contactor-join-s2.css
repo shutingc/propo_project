@@ -58,23 +58,69 @@ body {
   font-weight: bold;
 }
 
-.lead {
-    color: #ffe344;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.8;
+
+
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 52px;
+    bottom: 40px;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #5a6071;
+    width: 200px;
+    text-align: left;
 }
 
-.qustion {
+.community {
+    background-color: #ffbc50;
+    height: 75px;
+    margin-bottom: 40px;
     color: white;
-    font-size: 18px;
-    margin-top: 5px;
-    -moz-border-radius: 700px; 
-    -webkit-border-radius: 700px; 
-    border-radius: 700px;
-    width: 25px;
-    background-color: #b72b43;
+    font-size: 20px;
+    padding-top:8px;
 }
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-bottom: 20px;
+}
+
+.nav-sidebar img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-sidebar > li:first-child  {
+    color: #ccc;
+    padding-left: 60px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 25px;
+  color: #fff;
+  transition: all ease 0.3s;
+}
+
+.nav-sidebar > li > a:hover {
+    color: #eee;
+    background-color: #3c4355;
+}
+
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:focus {
+  color: #ffe344;
+  background-color: #252934;
+  border-left: 4px solid #ffe344;
+}
+
+
 
 /*
  * Footer
@@ -90,10 +136,13 @@ body {
   /* Pull out the header and footer */
   .masthead {
     margin-bottom: 100px;
+      
   }
   .mastfoot {
     position: fixed;
     bottom: 0;
+    left: 0;
+    background-color: #252934;
   }
   /* Start the vertical centering */
   /* Handle the widths */
@@ -114,6 +163,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 1200px;
+/*    width: 1200px;*/
   }
 }
