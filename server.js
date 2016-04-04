@@ -8,7 +8,7 @@ http.createServer(function(request, response) {
 
   var uri = url.parse(request.url).pathname;
   var filename = path.join(process.cwd(), uri);
-
+  console.log(filename);
   var contentTypesByExtension = {
     '.html': "text/html",
     '.css':  "text/css",
